@@ -1,0 +1,378 @@
+:root {
+    --main-font: Montserrat, sans-serif;
+    --button-font: Nunito, sans-serif;
+    --brand-color: rgba(21, 105, 99, 1);
+    --brand-color-shadow: rgba(21, 105, 99, 0.3);
+    --transition: .3s all ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: var(--transition);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+ svg path[fill="#156963"] {
+    fill: var(--brand-color);
+ }
+
+.welcome {
+    padding: 40px 56px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    transition: var(--transition);
+}
+
+.header__logo:hover {
+    transform: scale(1.4);
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    font-family: var(--button-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+}
+
+.header__signup {
+    padding: 8px 30px;
+    color: var(--brand-color);
+    border: 2px solid transparent;
+}
+
+.header__signup:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--brand-color-shadow);
+}
+
+.header__signin {
+    padding: 8px 33px;
+    color: #fff;
+    background: var(--brand-color);
+}
+
+.header__signin:hover {
+    transform: scale(1.05);
+}
+
+.welcome__info {
+    max-width: 520px;
+    margin-inline: auto;
+    margin-top: 197px;
+    margin-bottom: 323px;
+}
+
+.welcome__title {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 68px;
+    text-align: center;
+    color: var(--brand-color);
+    margin-bottom: 24px;
+}
+
+.welcome__desc {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    color: #2c1500;
+    opacity: 0.8;
+}
+
+.main {
+    max-width: 1168px;
+    padding: 0 56px 40px 56px;
+    margin-inline: auto;
+}
+
+.profit {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.profit__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc((100% - 32px * 3)/4);
+    padding: 21px 16px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+.profit__item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px 0px var(--brand-color-shadow);
+}
+
+.profit__title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.profit__name {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--brand-color);
+}
+
+.profit__desc {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 160%;
+    color: #2c1500;
+}
+
+.featured {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.featured__title {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 47px;
+    position: relative;
+}
+
+.featured__title > span::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #e0e0e0;
+    width: 100%;
+    height: 2px;
+    bottom: -16px;
+}
+
+.featured__items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featured__plant {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc((100% - 20px * 4)/5);
+}
+
+.featured__plant:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 15px var(--brand-color-shadow);
+}
+
+.featured__image {
+    display: flex;
+    background: #f3f4f6;
+    margin-bottom: 16px;
+    flex: auto;
+}
+
+.featured__name {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.featured__price {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    background: #f3f4f6;
+}
+
+.shop__info {
+    max-width: 583px;
+    margin-left: 97px;
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+.shop__invite {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: #2c1500;
+    margin-bottom: 32px;
+}
+
+.shop__button {
+    font-family: var(--button-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #fafefe;
+    border: 1px solid var(--brand-color);
+    padding: 10px 42px;
+    background: var(--brand-color);
+}
+
+.shop__button:hover {
+    background: rgb(4, 40, 49);
+    transform: scale(1.02);
+}
+
+.shop__image {
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .welcome__info {
+        margin-top: 150px;
+        margin-bottom: 250px;
+    }
+    .profit__item {
+        flex: 0 1 calc((100% - 32px)/2);
+    }
+    .shop__info {
+        max-width: 430px;
+        margin: 55px 0 55px 65px; 
+    }
+    .shop__invite {
+        font-size: 36px;
+    }
+    .shop__image {
+        flex-shrink: 0.2;
+    }
+    .shop__image img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome__info {
+        margin-top: 100px;
+        margin-bottom: 180px;
+    }
+    .welcome__title {
+        font-size: 48px;
+    }
+    .welcome__desc {
+        font-size: 16px;
+    }
+    .featured__plant {
+        flex: 0 1 calc((100% - 20px)/2);
+    }
+    .shop__info {
+        max-width: 280px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+    }
+    .shop__invite {
+        font-size: 26px;
+    }
+    .shop__button {
+        padding: 8px 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .welcome {
+        padding: 30px 40px 0;
+    }
+    .header__signup, .header__signin {
+        padding: 8px 14px;
+    }
+    .welcome__info {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    .welcome__title {
+        font-size: 42px;
+    }
+    .welcome__desc {
+        font-size: 15px;
+    }
+    .main {
+        padding: 0 40px 30px 40px;
+    }
+    .profit__item {
+        flex: 0 1 100%;
+    }
+    .profit__name {
+        font-size: 18px;
+    }
+    .profit__desc {
+        font-size: 12px;
+    }
+    .featured__plant {
+        flex: 0 1 100%;
+    }
+    .profit__name, .featured__name, .featured__price {
+        font-size: 20px;
+    }
+    .shop {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop__info {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+        margin-inline: auto;
+    }
+    .shop__invite {
+        font-size: 30px;
+        padding: 0 5px;
+    }
+}
+
+
+
+
+
+
+ 
